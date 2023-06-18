@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Henna Lelke</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+#home {
+	width: 100vw;
+}
+
+video {
+    position: fixed;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+#home::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.65;
+	z-index: -1;
+}
+  </style>
+</head>
+<body>
+  <section id="home">
+
+      <video autoplay loop muted src="henna-tatoos.mov" type="video/mov"></video>
+    <h1>Welcome to My Website</h1>
+    <p>This is the jumbotron content.</p>
+  </section>
+
+  <div class="content">
+    <h2>Other Content</h2>
+    <p>This is the other content of the page.</p>
+  </div>
+</body>
+</html>
